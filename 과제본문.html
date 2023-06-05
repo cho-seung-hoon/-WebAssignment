@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>과제 본문</title>
+    <link rel="stylesheet" type="text/css" href="과제.css"/>
+    <script src="과제스크립트.js"></script>
+  </head>
+  <body onload="checkScreenSize()">
+    <header>
+      <div id="headiv">
+        <img src="app.png" alt="" width="50px" height="50px" />
+        <h3>웹프로그래밍</h3>
+      </div>
+      <nav style="position: fixed; right: 0">
+        <div class="postit">
+          <span><a class="noneA" href="#onesec">처음 으로</a></span>
+        </div>
+        <div class="postit">
+          <span><a class="noneA" href="#twosec">본인 소개</a></span>
+        </div>
+        <div class="postit">
+          <span><a class="noneA" href="#threesec">관심 기술</a></span>
+        </div>
+        <div class="postit">
+          <span><a class="noneA" href="#ninesec">관심 기업</a></span>
+        </div>
+        <div class="postit">
+          <span><a class="noneA" href="#thirteensec">퓨처 플랜</a></span>
+        </div>
+      </nav>
+    </header>
+    <aside>
+      <div id="fixeplz">
+        화면 크기를 width: 1600, Height: 860 이상으로 요청합니다.
+      </div>
+  
+      <script>
+        function ScreenSize() {
+          var screenWidth =
+            document.documentElement.clientWidth
+          var screenHeight =
+            document.documentElement.clientHeight
+  
+          var fixeplz = document.getElementById('fixeplz');
+  
+          if (screenWidth < 1600 || screenHeight < 860) {
+            fixeplz.style.display = 'block';
+          } else {
+            fixeplz.style.display = 'none';
+          }
+        }
+        
+        window.addEventListener('resize', ScreenSize);
+      </script>
+      </aside>
+      <main>
+      <section id="onesec">
+        <div id="fimg"><img id="mainimg" src="컴터실험.gif" alt="" /></div>
+        <article>
+          <div id="text" title="간단한 자기소개">
+            조승훈
+            <br />
+            201901832
+            <br />
+            2023 - 1학기 웹프로그래밍
+            <br />
+            <br />
+            안녕하세요. 소프트웨어공학전공 조승훈 입니다.
+            <br />간단한 자기 소개와 함께 현재 제가 관심있어하는 분야와 기술
+            그리고 기업들을 보여드리겠습니다.
+          </div>
+        </article>
+      </section>
+      <section id="twosec">
+        <article id="box1" class="box white"><p class="write"> - 모바일 산업은 현재 계속 발전하고 확장 되가고 있습니다. <br>요즘 다양한 웨어러블 기기가 개발되고 있는데 웨어러블 기기마다 각자 특징이 다릅니다.<br> 이에 따른 앱을 만들어야 하고 하드웨어의 발전이 곧 소프트웨어 시장의 확장으로 이어주니 기대가 높은 분야라고 생각합니다. 
+          <br>앱테크, 게임, 금융 등 다양한 분야의 앱을 사용하고 경험하면서, 나의 삶이 변화하고 영향을 받는 것을 느꼈습니다.<br> 앱을 통해 많은 사람들이 개인의 삶의 질을 향상시키거나 새로운 경험을 제공받을 수 있습니다.<br> 이러한 이유로, 저도 앱 개발을 통해 많은 사람들에게 소소한 행복을 제공해주고, 일어나는 작은 문제들을 해결법을 제시하는 앱을 개발하고 싶습니다.<br>
+           - 컴퓨터 비전은 이미지 및 비디오 데이터를 해석하고 이해하는 기술로, 현실 세계의 시각적 정보를 컴퓨터가 처리하고 활용할 수 있게 합니다. 이러한 기술은 다양한 분야에서 활용되고 있으며, 특히 모바일 앱 분야에서는 컴퓨터 비전을 통해 사용자에게 향상된 시각적 경험을 제공하는 앱들이 많이 개발되고 있습니다.<br>
+          컴퓨터 비전 기술을 배움으로써 저는 사용자들에게 더욱 풍부하고 흥미로운 시각적 경험을 제공하는 앱을 개발할 수 있을 것으로 기대하고 있습니다.<br>
+           - 네이버는 모바일 앱 분야에서는 많은 인기를 얻고 있습니다. 네이버의 기술과 서비스에 관심을 가지는 이유는 나의 앱 개발을 통해 사용자들에게 유용한 서비스를 제공하고자 하는 목표와 일치하기 때문입니다. 네이버는 뛰어난 기술력과 창의적인 아이디어를 통해 사용자들의 삶을 향상시키는 서비스를 제공하고 있으며, 나는 네이버와 함께 일하며 이러한 가치를 실현할 수 있는 기회를 갖고 싶습니다. </p>
+          <div class="mainpost"><img class="postimg" src="모바일.png" alt=""></div><div class="mainpost"><img class="postimg" src="안드.png" alt=""></article>
+        <article id="box2" class="box white"><p class="write"> - 팀 쿡을 보고 많은 감명을 받았습니다. 그는 애플의 CEO로서 혁신적인 제품과 기술 개발에 큰 역할을 했습니다. <br>저는 팀 쿡의 지도력과 비전에 영감을 받아 모바일 프로그래밍 분야에서 그의 영향을 받아 성장하고자 했습니다.<br>그의 전략적인 의사결정과 지속적인 혁신에 대한 열정을 배우며, 애플의 제품 디자인과 사용자 경험에 대해 관심을 키웠습니다.<br>저는 팀 쿡의 명언 중 "최고의 제품을 만들기 위해서는 탁월한 팀을 구축해야 한다"라는 말을 신조로 삼아 협업과 팀워크를 중심으로 앱 개발을 해나갈 예정입니다.<br> - 그리고 프로그래밍에 관심을 다지는 계기가 된 이유 중 하나는 프로그래밍 커뮤니티에서 만난 사람들입니다.<br>온라인 서핑 중 우연히 커뮤니티 그룹에 소속되는 계기가 생겼고 그들과의 소통을 통해 다양한 프로그래밍 기술적 문제를 해결하는 방식을 배웠고 특히 모바일 쪽 기술을 많이 들으면서 진로를 잡았습니다.<br>이러한 커뮤니티에서의 활동은 나에게 협업과 지식 공유의 중요성을 깨닫게 했습니다.
+          대학교에서는 컴퓨터 공학을 전공을 선택하여 기초적인 프로그래밍 지식을 습득했습니다. 그리고 모바일 프로그래밍 관련 수업을 선택하여 안드로이드 앱 개발을 배우고 있으며 안드로이드 게임 제작에 참여 중입니다.</p>
+          <div class="mainpost"><img class="postimg" src="팀쿡.png" alt=""></div><div class="mainpost"><img class="postimg" src="코딩방.jpg" alt=""></div><div class="mainpost"><img class="postimg" src="게임.jpg" alt=""></div></article>
+        <article id="box3" class="box white"><p class="write">COVID-19와 러시아의 우크라이나 침공으로 에너지/식량 안보 위기가 대두되고 있습니다. 특히 한국은 원유, 천연가스, 전기 생산 원료 등 대부분 수입에 의존하고 있는 상황이라 전력비가 오르는 난간에 부딪힌 상황입니다.<br>거기에 에너지 전환 사업을 추진하고 있는 중이었기에 석탄류의 에너지 사용을 줄이고 전기와 친환경에너지를 늘리고 있었기에 전기세의 상승은 피할 수 없는 상황입니다.
+          이에 식량 상황도 마찬가지로 날이 갈수록 곡물 자급률이 떨어지고 있는 와중 전쟁으로 인해 우크라이나의 곡물 수출이 봉쇄되고 에너지/비료 가격 상승, 기후 변화로 인한 식량 생산 방해로 전체적으로 식량 가격이 오르고 있는 상황입니다.<br>
+          국가적으로는 외/내적 투자량을 증가시켜 식량/에너지 사업을 키워야 합니다. 에너지 분야에서는 신재생 에너지 개발과 에너지 다각화를 촉진하고 국제 에너지 협력을 강화해야 합니다. 식량 분야에서는 농업 지원 정책을 강화하고 농업 기술 개발에 투자하여 생산성을 높여야 합니다. 소비자로서 신재생 에너지를 활용하고, 지역 농산물을 선호하여 구매하며, 식품 낭비를 줄이는 것이 중요합니다.
+          <br>개인적으로 태양광 패널이나 풍력 발전기 등의 장치를 설치하여 신재생 에너지를 활용하고, 지역 농산물을 구매하여 지역 경제를 지원하며, 식단 계획을 세우고 필요한 양을 구매하여 식품 낭비를 줄이는 것이 필요합니다. 이러한 노력은 우리의 환경과 경제에 긍정적인 영향을 미칠 것입니다.<br>정책적 변화와 소비자들의 변화된 행동을 통해 중장기적으로 외부 환경 변화에 버틸 힘과 자급자족을 갖춘 농업을 구축할 수 있습니다.<br>이 문제들은 국가와 소비자가 협력하여 적극적으로 추진되어야 할 중요한 과제라고 생각합니다.</p>
+          <div class="mainpost"><img class="postimg" src="식량안보.png" alt=""></div><div class="mainpost"><img class="postimg" src="에너지안보.png" alt=""></div></article>
+        <article id="box4" class="box white"><p class="write">대학 동아리에서 유니티 3D를 사용하여 게임을 개발한 경험이 있습니다. 이 프로젝트를 진행하면서 성능 저하와 병목 현상에 대해 많은 고민을 했습니다. 초기에는 최적화를 제대로 진행하지 않아 게임이 느려지는 느낌을 받았고, 이후 병목 현상이 발생한 것을 깨달았습니다. 이를 해결하기 위해 다음과 같은 방법을 사용했습니다<br>
+           - 첫째로, 프로파일링 도구를 사용하여 성능에 영향을 주는 부분을 찾았습니다. CPU, 메모리, GPU 사용량을 확인하고 병목 현상이 발생하는 부분을 식별했습니다. 이를 통해 어떤 부분에서 성능 저하가 발생하는지 파악했습니다.<br>
+           - 둘째로, 식별된 병목 현상을 해결하기 위해 최적화 기술을 적용했습니다. 스크립트를 다시 재구성하여 알고리즘을 개선하거나, 불필요한 연산을 제거하거나 등의 내부 자료 구조들을 최적하는 방법을 사용했습니다. 이를 통해 성능을 향상시킬 수 있었습니다.<br>
+           - 셋째로 특히, 그래픽 최적화에 노력을 기울였습니다. 유니티의 무거운 큰 원인 중 하나가 셰이더와 텍스처 등의 그래픽적 요소라는 것을 종종 들었기에 셰이더, 텍스처 최적화를 진행했고, 뷰 프러스텀를 통해 적은 렌더링 작업 환경을 구성했습니다. <br> - 이러한 노력을 통해 게임의 성능을 개선했고, 최적화와 병목 현상 해결에 대한 경험을 쌓을 수 있었습니다. 이후로도 게임 개발에서 최적화와 성능 향상에 항상 주의를 기울이며, 지속적인 학습과 도전을 통해 더 나은 게임을 만들고자 노력하고 있습니다.</p>
+           <div class="mainpost"><img class="postimg" src="병목현상.png" alt=""></div><div class="mainpost"><img class="postimg" src="성능그래프.png" alt=""></div></article>
+        <article id="box5" class="box white"><p class="write">저는 컴퓨터 공학과 3학년 학생으로, 다양한 프로그래밍 언어와 기술을 익히며 프로젝트에 기여할 수 있는 역량을 갖추었습니다. C, C++, 파이썬, 자바 등의 언어를 배웠으며, 이를 통해 기초적인 프로그래밍 지식을 확립했습니다. 프로그래밍에 있어서는 항상 새로운 도전을 두려워하지 않고, 문제 해결을 위해 노력하는 자세를 갖고 있습니다.
+          <br>그리고, 게임 제작 동아리에 가입하여 다양한 게임 프로젝트를 진행한 경험이 있습니다. 이를 통해 소통과 협업 능력을 향상시키고, 팀원들과의 조화로운 협업을 통해 뛰어난 결과물을 창출할 수 있었습니다. 게임 제작은 창의력과 논리적 사고를 동시에 요구하는 분야로, 이를 통해 저의 창의성과 문제 해결 능력을 발전시켰습니다.
+          <br>또한, 동아리 활동을 통해 선후배들과 함께 팀을 이뤄 프로그래밍 교육 활동을 진행한 경험이 있습니다. 이를 통해 리더십과 자신감을 키우는 기회를 얻었고, 동료들과의 협업을 통해 서로의 아이디어와 지식을 공유하며 성장할 수 있었습니다.
+          <br>저는 지금까지의 경험과 학습을 통해 프로그래밍 능력뿐만 아니라 팀워크, 소통, 문제 해결 능력 등 다양한 역량을 키워왔습니다. 앞으로의 도전과 프로젝트에서도 이러한 역량을 바탕으로 높은 수준의 기여를 할 수 있을 것입니다. 더불어 항상 새로운 기술과 도구에 대한 학습에도 열려있으며, 지속적인 성장과 발전을 추구하고 있습니다.</p><div class="mainpost"><img class="postimg" src="공뛰기프로젝트.jpg" alt=""></div><div class="mainpost"><img class="postimg" src="자판기과제.png" alt=""></div>
+          <div class="loadingBox">
+            <div class="circle-text">&nbspC<div class="circle"></div></div>
+            <div class="circle-text">C++<div class="circle"></div></div>
+            <div class="circle-text">JAVA<div class="circle"></div></div>
+            <div class="circle-text">PY<div class="circle"></div></div>
+          </div>
+        </article>
+        <article class="button-container">
+          <button title="주제 선정 동기와 이루고 싶은 목표" onclick="bringToFront('box1')">주제 목표</button>
+          <button title= "본인 성장 과정" onclick="bringToFront('box2')">성장 과정</button>
+          <button title= "최근 사회 이슈 중 중요하다고 생각되는 한 가지를 선
+          택하고 자신의 견해 기술" onclick="bringToFront('box3')">사회 이슈</button>
+          <button title= "프로젝트/과제 중 기술적으로 가장 어려웠던 부분과 
+          해결 방안에 대해 서술" onclick="bringToFront('box4')">난도 해법</button>
+          <button title= "본인 역량에 대해 자유롭게 기술" onclick="bringToFront('box5')">본인 역량</button>
+        </article>
+
+        <script>
+          box1.style.zIndex = 1;
+          function bringToFront(boxId) {
+            var boxes = document.getElementsByClassName('box');
+            var box = document.getElementById(boxId);
+
+            for (var i = 0; i < boxes.length; i++) {
+              boxes[i].style.zIndex = 0;
+            }
+            box.style.zIndex = 1;
+          }
+        </script>
+      </section>
+      <section id="threesec">
+        <div id="text">
+          컴퓨터 비전
+          <br />
+          <br />
+          "시간의 흐름과 함께 세상을 눈으로 담아내는 마법,
+          <br />그것이 컴퓨터 비전입니다."
+        </div>
+        <div>
+          <img id="tecimg" src="기술메인.gif" alt="" />
+        </div>
+      </section>
+      <section id="foursec">
+        <div id="infotec">컴퓨터 비전 기술</div>
+        <br>
+        <br>
+        <div id="four-center">
+          <ul>
+            <li>
+              컴퓨터가 상황을 인식하고 물체를 구별(객체 인식+이해)할 수 있는
+              시각적 능력(visual ability)을 갖추게 하는 컴퓨터 과학 학문
+            </li>
+            <br />
+            <li>
+              사람의 사물을 보고 상황을 파악하여 인지하는 작업 능력을 그대로
+              컴퓨터가 수행 컴퓨터가 이해할 수 있도록 이미지의 특징을 추출하는
+              행위
+            </li>
+            <br />
+            <li>
+              컴퓨터 비전에서 주로 활용하는 영상 정보는 주로 밝기, 색상, 텍스처
+              등이 있으며 이러한 정보들을 딥러닝, 특히 CNN(Convolutional Neural
+              Network) 알고리즘을 함께 사용하여 사물을 인지함.
+            </li>
+          </ul>
+          </div>
+        
+      </section>
+      <section id="fivesec"></section>
+      <section id="sixsec">
+        <div id="middle_text">컴퓨터 비전 간단 작동 원리</div>
+        <div class="table">
+          <div class="table_cell">
+            <img src="이미지수집.png" alt="" class="X100" />
+            <h4>이미지 수집</h4>
+            <p>
+              동영상, 사진 또는 3D 기술을 통해 분석할 (심지어 대량의) 이미지를
+              <mark>실시간</mark>으로 수집할 수 있습니다.
+            </p>
+          </div>
+          <div class="table_cell">
+            <img src="이미지처리.png" alt="" class="X100" />
+            <h4>이미지 처리</h4>
+            <p>
+              딥 러닝 모델에는 이미지 수집 프로세스의 대부분이 <mark>자동화</mark>되어 있지만
+              라벨이 부착된 수천 개의 이미지를 먼저 업로드하여 학습시키는 경우도
+              있습니다.
+            </p>
+          </div>
+          <div class="table_cell">
+            <img src="이미지파악.png" alt="" class="X100" />
+            <h4>이미지 파악</h4>
+            <p>마지막 단계는 객체를 <mark>식별</mark>하거나 <mark>분류</mark>하는 해석 단계입니다.</p>
+          </div>
+        </div>
+      </section>
+      <section id="sevensec">
+        <div id="middle_text">컴퓨터 비전 예시</div>
+        <div class="flex">
+          <div class="tweet-container">
+            <div class="tweet">
+              <div class="tweet-content">
+                <div class="tweet-username">구글 렌즈</div>
+                <div class="tweet-text">구글 렌즈는 컴퓨터 비전, 기계 학습 및 인공지능 기술을 이용하여 사물 인식, 텍스트 해석, QR 코드 및 바코드 스캔 등 다양한 기능을 제공하는 강력한 모바일 비주얼 검색 도구입니다.</div>
+                <div class="tweet-date">May 17, 2023</div>
+                <img class="tweet-imagesize" src="구글렌즈.png" alt="123" />
+                <div>
+                  답글 : 51 &nbsp; &nbsp; &nbsp; &nbsp; 공유 : 100 &nbsp; &nbsp;
+                  &nbsp; &nbsp; 하트 : 104 &nbsp; &nbsp; &nbsp; &nbsp; 공유
+                </div>
+              </div>
+            </div>
+
+            <div class="tweet">
+              <div class="tweet-content">
+                <div class="tweet-username">모션 트래킹</div>
+                <div class="tweet-text">모션 트래킹은 컴퓨터 비전과 알고리즘을 활용하여 움직임을 감지하고 추적하는 기술로, 주로 인체 동작 인식, 가상 현실 및 증강 현실 애플리케이션에 적용되어 사용자와 상호작용하는 다양한 경험을 제공합니다.</div>
+                <br>
+                <div class="tweet-date">May 23, 2023</div>
+                <img class="tweet-imagesize" src="모션트래킹.jpg" alt="123" />
+                <div>
+                  답글 : 5 &nbsp; &nbsp; &nbsp; &nbsp; 공유 : 98 &nbsp; &nbsp;
+                  &nbsp; &nbsp; 하트 : 100 &nbsp; &nbsp; &nbsp; &nbsp; 공유
+                </div>
+              </div>
+            </div>
+            <div class="tweet">
+              <div class="tweet-content">
+                <div class="tweet-username">자율 주행 자동차</div>
+                <div class="tweet-text">자율주행자동차는 센서, 인공지능 및 알고리즘을 통해 주행환경을 인식하고 판단하여 조향, 가속, 제동 등의 제어를 자동으로 수행하는 차량으로, 운전자의 개입 없이 안전하고 편리한 주행을 실현합니다.</div>
+                <br>
+                <div class="tweet-date">May 17, 2023</div>
+                <img class="tweet-imagesize" src="자율주행.png" alt="123" />
+                <div>
+                  답글 : 9 &nbsp; &nbsp; &nbsp; &nbsp; 공유 : 200 &nbsp; &nbsp;
+                  &nbsp; &nbsp; 하트 : 300 &nbsp; &nbsp; &nbsp; &nbsp; 공유
+                </div>
+              </div>
+            </div>
+
+            <div class="tweet">
+              <div class="tweet-content">
+                <div class="tweet-username">인스타 릴스</div>
+                <div class="tweet-text">"컴퓨터 비전을 곁들인 인스타릴스"는 인스타그램 스토리에 실시간으로 적용되는 텍스트, 스티커, GIF 등 다양한 요소를 컴퓨터 비전 기술을 활용하여 인식하고 처리하여 콘텐츠를 생성하고 공유하는 혁신적인 기술입니다.</div>
+                <div class="tweet-date">May 16, 2022</div>
+                <img class="tweet-imagesize" src="인스타릴스.png" alt="123" />
+                <div>
+                  답글 : 6 &nbsp; &nbsp; &nbsp; &nbsp; 공유 : 11 &nbsp; &nbsp;
+                  &nbsp; &nbsp; 하트 : 900 &nbsp; &nbsp; &nbsp; &nbsp; 공유
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="eightsec">
+        <div>
+          <div id="middle_text">컴퓨터 비전 소개 영상</div>
+          <iframe
+            width="840"
+            height="472.5"
+            src="https://www.youtube.com/embed/5eeRSvKYpQo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="ninesec">
+        <div id="text">
+          NAVER
+          <br />
+          <br />
+          "네이버, 당신의 다양한 정보와 연결된 세상을 열다."
+        </div>
+        <div>
+          <img id="Enterpriseimg" src="관심기업.gif" alt="" />
+        </div>
+      </section>
+      <section id="tensec">
+        <div class="wihteboard">
+          <table border="1">
+            <caption>네이버 기업 정보</caption>
+            <tbody>
+              <tr>
+                <td>산업 : </td> <td>포털 및 기타 인터넷 정보매개 서비스업</td>
+                <td>기업구분 : </td> <td>대기업</td>
+              </tr>
+              <tr>
+                <td>자본금 : </td> <td>164억 8천만원&#40;2022.12.31&#41;</td>
+                <td>사원수 : </td> <td>4793명</td>
+              </tr>
+              <tr>
+                <td>주소 : </td> <td>경기 성남시 분당구 정자동 178-1 그린팩토리</td>
+                <td>설립일 : </td> <td>1999.06.02</td>
+              </tr>
+              <tr>
+                <td>홈페이지 : </td> <td><a href="http://www.navercorp.com"
+                  >http://www.navercorp.com</a
+                ></td>
+                <td>매출액 : </td> <td>5조 5,125억원</td>
+              </tr>
+              <tr>
+                <td>주요사업 : </td> <td>인터넷검색사이트 운영,인터넷방송,컨텐츠검색</td>
+                <td>대졸초임 : </td> <td>3,000만원</td>
+              </tr>            
+            </tbody>
+          </table>
+          <div>
+            <h4>네이버는 어떤 기업일까?</h4>
+            <p class="t_exp1">
+              1999년에 설립된 네이버는 국내 1위 인터넷 포털 <mark>'네이버(NAVER)'</mark>와 글로벌 모바일 플랫폼 '라인(LINE)' 등을 운영하며, 다양한 인터넷 서비스를 기반으로 디스플레이 광고, 동영상 광고 등 광고 사업과 검색, 쇼핑 검색 등 비즈니스플랫폼 사업, 네이버 페이, 클라우드, 웍스 등 IT플랫폼 사업, 네이버 뮤직, 웹툰 등 플랫폼 사업을 영위하고 있다.<br>
+              <br>
+              이외에도 네이버는 게임업체 ‘한게임’과 검색전문회사 ‘서치솔루션’을 인수합병한 후 <mark>통합검색을 세계 최초로 출시</mark>했고, 네이버 재팬’의 <mark>모바일 메신저 ‘라인’</mark>을 출시하며 성공의 기틀을 마련한 뒤, 일본 외 시장에서도 큰 호응을 얻으며 글로벌 메신저로 성장했다. 이러한 사업을 바탕으로 네이버는 라인 주식회사, 라인플러스, 네이버비즈니스플랫폼, 라인씨앤아이 등 98개의 자회사를 두고 있으며, 일본, 미국, 영국, 중국, 베트남, 대만, 태국 등지에 해외법인이 있다. 해외연구소로는 '네이버 · 라인 - 홍콩과학기술대학 AI 연구소', ‘네이버랩스유럽’ 등이 있다.<br>
+              <br>
+              2021년에는 중소상공인을 대상으로 하는 전문 비즈니스 교육 플랫폼 <mark>'네이버 비즈니스 스쿨' 온라인 캠퍼스</mark>를 오픈했다. 디지털 플랫폼 상에서의 작은 규모의 경영에 필요한 교육 정보 프로그램을 제공하는 것이 특징이다. 최근 2022년 5월에는 '네이버 검색 콜로키움 2022'에서 기존의 통합검색에서 최신 인공지능 기술을 통해 사용자 맞춤형 검색으로 발전하는 <mark>'에어서치'</mark>로의 변화 및 연구 성과를 발표했다. 에어서치는 세분화되고 다양해지는 사용자의 요구를 충족시키기 위해 스마트블록을 사용하여 검색 결과를 제공하는 새로운 검색 브랜드이다. 앞으로 사용자가 인공지능을 일상에서 체감할 수 있는 검색 환경을 구축하기 위해 스마트블록을 30%까지 확대 적용할 계획이다.</p>
+          </div>
+        </div>
+        <div>
+        <input type="radio" name="chart" onclick="drawBarChart(1)"checked/>
+        매출액
+        <input type="radio" name="chart" onclick="drawBarChart(2)" />
+        영업이익
+        <input type="radio" name="chart" onclick="drawBarChart(3)" />
+        당기순이익
+        <br />
+        <canvas id="myChart" width="400" height="300"></canvas>
+
+        <script>
+          var canvas = document.getElementById('myChart');
+          var context = canvas.getContext('2d');
+          
+          var chartData = new Array();
+          
+          chartData = [
+            { year: 2019, value: 39, name:"3조 9,000억" },
+            { year: 2020, value: 41.266, name:"4조 1,266억"},
+            { year: 2021, value: 51.186, name:"5조 186억"},
+            { year: 2022, value: 55.125, name:"5조 5,125억"},
+          ];
+        
+          function drawBarChart(chartType) {
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            var data;
+            if (chartType == 1) {
+              data = chartData;
+            } else if (chartType == 2) {
+              data = [
+                { year: 2019, value: 28, name:"1조 3,938억" },
+                { year: 2020, value: 30, name:"1조 4,408억"},
+                { year: 2021, value: 35, name:"1조 5,587억"},
+                { year: 2022, value: 34.5, name:"1조 5,537억"},
+              ];
+            } else if (chartType == 3) {
+              data = [
+                { year: 2019, value: 19.25, name:"1조 925억원" },
+                { year: 2020, value: 11.969, name:"1조 1,969억원"},
+                { year: 2021, value: 15.247, name:"1조 5,247억원"},
+                { year: 2022, value: 19.21, name:"1조 921억원"},
+              ];
+            }
+          
+            var barWidth = 50;
+            var startX = 50;
+            var startY = canvas.height - 30;
+          
+            for (var i = 0; i < data.length; i++) {
+              var barHeight = data[i].value * -3; 
+              var x = startX + i * (barWidth + 10);
+              var y = startY + barHeight;
+            
+              context.fillStyle = 'blue';
+              context.fillRect(x, y, barWidth, Math.abs(barHeight));
+
+              context.fillStyle = 'black';
+              context.textAlign = 'center';
+              context.fillText(data[i].year, x + barWidth / 2, canvas.height - 10);
+            
+
+              context.fillStyle = 'black';
+              context.textAlign = 'center';
+              context.fillText(data[i].name, x + barWidth / 2, y - 10);
+            }
+          }
+
+          drawBarChart(1);
+        </script>
+
+            </div>
+        </div>
+      </section>
+      <section id="elevensec">
+        <div id="service_naver">네이버 주요 서비스</div>
+        <div class="instar-container">
+          <div class="instar-grid">
+            <div class="instar-post">
+              <div class="instar-post-header">
+                <span class="instar-post-icon">&#x1F464;</span>
+                <div class="instar-post-user">네이버</div>
+              </div>
+              <img class="instar-post-image" src="네이버.jpg" alt="Post Image" />
+              <div class="instar-post-actions">
+                <span class="instar-post-action">❤️</span>
+                <span class="instar-post-action">💬</span>
+                <span class="instar-post-action">🔁</span>
+              </div>
+              <div class="instar-post-caption">종합 포털로서 다양한 서비스를 제공하여 사용자들에게 편리하고 다양한 정보와 콘텐츠를 제공</div>
+              <div class="instar-post-timestamp">2 hours ago</div>
+            </div>
+
+            <div class="instar-post">
+              <div class="instar-post-header">
+                <span class="instar-post-icon">&#x1F464;</span>
+                <div class="instar-post-user">네이버 지도</div>
+              </div>
+              <img
+                class="instar-post-image"
+                src="네이버지도.jpg"
+                alt="Post Image"
+              />
+              <div class="instar-post-actions">
+                <span class="instar-post-action">❤️</span>
+                <span class="instar-post-action">💬</span>
+                <span class="instar-post-action">🔁</span>
+              </div>
+              <div class="instar-post-caption">사용자에게 정확하고 상세한 지도 정보를 제공하여, 위치 검색, 길 안내 등을 통해 경로 탐색을 도우는 서비스</div>
+              <div class="instar-post-timestamp">1 day ago</div>
+            </div>
+
+            <div class="instar-post">
+              <div class="instar-post-header">
+                <span class="instar-post-icon">&#x1F464;</span>
+                <div class="instar-post-user">네이버 카페</div>
+              </div>
+              <img
+                class="instar-post-image"
+                src="네이버카페.jpg"
+                alt="Post Image"
+              />
+              <div class="instar-post-actions">
+                <span class="instar-post-action">❤️</span>
+                <span class="instar-post-action">💬</span>
+                <span class="instar-post-action">🔁</span>
+              </div>
+              <div class="instar-post-caption">다양한 관심사와 주제를 공유, 소통할 수 있는 커뮤니티 공간, 자유롭게 정보를 교류와 소통하는 플랫폼</div>
+              <div class="instar-post-timestamp">3 hours ago</div>
+            </div>
+
+            <div class="instar-post">
+              <div class="instar-post-header">
+                <span class="instar-post-icon">&#x1F464;</span>
+                <div class="instar-post-user">네이버 나우</div>
+              </div>
+              <img
+                class="instar-post-image"
+                src="네이버나우.jpg"
+                alt="Post Image"
+              />
+              <div class="instar-post-actions">
+                <span class="instar-post-action">❤️</span>
+                <span class="instar-post-action">💬</span>
+                <span class="instar-post-action">🔁</span>
+              </div>
+              <div class="instar-post-caption">실시간으로 변화하는 다양한 소식과 이슈를 한눈에 확인, 다양한 콘텐츠와 사용자들의 의견을 공유 플랫폼</div>
+              <div class="instar-post-timestamp">4 hours ago</div>
+            </div>
+
+            <div class="instar-post">
+              <div class="instar-post-header">
+                <span class="instar-post-icon">&#x1F464;</span>
+                <div class="instar-post-user">네이버 클로바</div>
+              </div>
+              <img
+                class="instar-post-image"
+                src="네이버클로바.jpg"
+                alt="Post Image"
+              />
+              <div class="instar-post-actions">
+                <span class="instar-post-action">❤️</span>
+                <span class="instar-post-action">💬</span>
+                <span class="instar-post-action">🔁</span>
+              </div>
+              <div class="instar-post-caption">인공지능 기술을 활용하여 음성인식, 자연어처리, 이미지인식 등 다양한 기능을 제공하는 개인 비서 서비스</div>
+              <div class="instar-post-timestamp">5 hours ago</div>
+            </div>
+
+            <div class="instar-post">
+              <div class="instar-post-header">
+                <span class="instar-post-icon">&#x1F464;</span>
+                <div class="instar-post-user">네이버 박스</div>
+              </div>
+              <img
+                class="instar-post-image"
+                src="네이버박스.jpg"
+                alt="Post Image"
+              />
+              <div class="instar-post-actions">
+                <span class="instar-post-action">❤️</span>
+                <span class="instar-post-action">💬</span>
+                <span class="instar-post-action">🔁</span>
+              </div>
+              <div class="instar-post-caption">다양한 문서와 파일을 한 곳에 모아 효율적으로 관리하고 공유할 수 있는 클라우드 기반의 온라인 문서 관리 서비스입니다./div>
+              <div class="instar-post-timestamp">6 hours ago</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="twelvesec">
+        <div id="info-naver">채용 정보</div>
+        <div class="navercareers">
+          <div class="naverpart">
+            <div class="naverpart-title">인재상</div>
+            <div class="naverpart-content">
+              <ul>
+                <li>얼굴이라는 책임감으로 겸손한 자세를 유지하는 인재</li>
+                <br />
+                <li>
+                  원활한 커뮤니케이션 상호 신뢰를 바탕으로 문화적 편견을 담은 행동을
+                  하지 않는 인재
+                </li>
+                <br />
+                <li>
+                  고객에게 최고의 가치와 만족을 창출하기 위해 창의적이고 혁신적인
+                  사고로 업무에 임하는 인재
+                </li>
+                <br />
+                <li>
+                  끊임없는 열정으로 업무에 대해 도전하고 네이버의 상충되는 사적인
+                  활동이나 관계를 만들지 않는 인재
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="naverpart">
+            <div class="naverpart-title">면접</div>
+            <div class="naverpart-content">
+              <ul>
+                <li>면접 난이도 – 다소 어려움</li>
+                <li>면접 분위기 – 다소 편안함</li>
+                <li>면접 인원 – 1대 면접관 다수 68%</li>
+              </ul>
+              <div>
+                <span>어필 역량:</span>
+                <div id="bar-chart">
+                  <canvas id="pieChart" width="500" height="500"></canvas>
+                
+                  <script>
+                    var pieData = [
+                      { label: '전문성/직무지식', value: 24 },
+                      { label: '마지막 한마디', value: 22 },
+                      { label: '자기소개', value: 20 },
+                      { label: '지원동기', value: 15 },
+                      { label: '기타', value: 19 },
+                    ];
+                  
+                    var pieCanvas = document.getElementById('pieChart');
+                    var pieContext = pieCanvas.getContext('2d');
+                  
+                    var centerX = pieCanvas.width / 2;
+                    var centerY = pieCanvas.height / 2;
+                    var radius = Math.min(pieCanvas.width, pieCanvas.height) / 2 - 20;
+                    var startAngle = 0;
+                  
+                    var total = pieData.reduce(function (acc, cur) {
+                      return acc + cur.value;
+                    }, 0);
+                  
+                    for (var i = 0; i < pieData.length; i++) {
+                      var sliceAngle = (pieData[i].value / total) * 2 * Math.PI;
+                    
+                      pieContext.beginPath();
+                      pieContext.moveTo(centerX, centerY);
+                      pieContext.arc(
+                        centerX,
+                        centerY,
+                        radius,
+                        startAngle,
+                        startAngle + sliceAngle
+                      );
+                      pieContext.closePath();
+                    
+                      var color = getRandomColor();
+                      pieContext.fillStyle = color;
+                      pieContext.fill();
+                    
+                      var labelX =
+                        centerX + Math.cos(startAngle + sliceAngle / 2) * (radius / 2);
+                      var labelY =
+                        centerY + Math.sin(startAngle + sliceAngle / 2) * (radius / 2);
+                      pieContext.fillStyle = 'black';
+                      pieContext.font = '13px Arial';
+                      pieContext.textAlign = 'center';
+                      pieContext.fillText(pieData[i].label, labelX, labelY + 20);
+                    
+                      var percentage = ((pieData[i].value / total) * 100).toFixed(1);
+                      pieContext.fillText(percentage + '%', labelX, labelY + 40);
+                    
+                      startAngle += sliceAngle;
+                    }
+                  
+                    function getRandomColor() {
+                      var letters = '0123456789ABCDEF';
+                      var color = '#';
+                      for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                      }
+                      return color;
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="naverpart">
+            <div class="naverpart-title">채용공고</div>
+            <button onclick="openJobPosting()">채용공고 보기</button>
+            <img
+              src="네이버채용정보.PNG"
+              alt=""
+              style="max-width: 100%; max-height: 100%"
+            />
+          </div>
+        </div>
+      
+        <script>
+          function openJobPosting() {
+            window.open(
+              'https://recruit.navercorp.com/rcrt/list.do?subJobCdArr=1010001%2C1010002%2C1010003%2C1010004%2C1010005%2C1010006%2C1010007%2C1010008%2C1010020%2C1020001%2C1030001%2C1030002%2C1040001%2C1050001%2C1050002%2C1060001&sysCompanyCdArr=&empTypeCdArr=&entTypeCdArr=&workAreaCdArr=&sw=&subJobCdData=1010001&subJobCdData=1010002&subJobCdData=1010003&subJobCdData=1010004&subJobCdData=1010005&subJobCdData=1010006&subJobCdData=1010007&subJobCdData=1010008&subJobCdData=1010020&subJobCdData=1020001&subJobCdData=1030001&subJobCdData=1030002&subJobCdData=1040001&subJobCdData=1050001&subJobCdData=1050002&subJobCdData=1060001',
+              '_blank'
+            );
+          }
+        </script>
+      </section>
+      <section id="thirteensec">
+        <div id='Future-name'>Future Plan</div>
+        <iframe scrolling=no src="future.html" frameborder="0" width="100%" height="100%"></iframe>
+      </section>
+    </main>
+    <footer>
+      <img class="footerimg" src="우체통.gif" alt="">
+      <div id="footertxt">
+        <p>이름: 조승훈</p>
+        <p>학교: 공주대학교</p>
+        <p>학번: 201901832</p>
+        <p>전화번호: 010-2503-xxxx</p>
+        <p>이메일: whtmdgns70@naver.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

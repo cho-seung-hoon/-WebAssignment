@@ -1,0 +1,495 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#fixeplz {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+#headiv {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#onesec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(104, 199, 255);
+}
+#twosec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(0, 75, 132);
+}
+#threesec {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(104, 199, 255);
+}
+#foursec {
+  width: 100%;
+  height: 40vh;
+  padding-top: 50px;
+  padding-left: 10px;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(214, 231, 247);
+  overflow: hidden;
+}
+#sixsec {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(214, 231, 247);
+}
+#sevensec {
+  width: 100%;
+  height: 130vh;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(214, 231, 247);
+}
+#eightsec {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(214, 231, 247);
+}
+#ninesec {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(104, 199, 255);
+}
+#tensec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(203, 201, 239);
+}
+#elevensec {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(203, 201, 239);
+}
+#twelvesec {
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: rgb(203, 201, 239);
+}
+#thirteensec {
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: rgb(104, 199, 255);
+}
+#fimg {
+  padding-right: 140px;
+  padding-left: 50px;
+}
+#text::first-line {
+  font-weight: bold;
+  font-size: 30px;
+}
+.postit {
+  float: left;
+  width: 45px;
+  height: 80px;
+  background-color: aqua;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+.postit:hover {
+  margin-top: 5px;
+  height: 95px;
+}
+.noneA {
+  text-decoration: none;
+  color: black;
+}
+#mainimg {
+  width: 130%;
+  height: 130%;
+  max-width: 800px;
+  max-height: 800px;
+}
+
+#tecimg {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.box {
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+}
+
+.button-container {
+  position: relative;
+  bottom: 45%;
+}
+
+.loadingBox .circle {
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border: 10px solid #000;
+  border-top: 10px solid blue;
+  border-radius: 10em;
+  transition: all 0.3s;
+  animation-name: spinCircle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left: 13%;
+}
+.loadingBox .circle-text {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  font-size: 30px;
+}
+
+@keyframes spinCircle {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.write {
+  padding: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.mainpost {
+  width: 250px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(스티커.PNG);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.postimg {
+  width: 240px;
+  height: 240px;
+  padding-top: 40px;
+  padding-left: 8px;
+}
+
+#infotec {
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+#four-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#four-center ul {
+  list-style-type: square;
+}
+
+#four-center li::marker {
+  color: yellow;
+  font-size: 50px;
+}
+.tweet-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tweet {
+  flex-basis: 50%;
+  margin-bottom: 5%;
+}
+
+.tweet-content {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tweet-username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tweet-text {
+  margin-bottom: 5px;
+}
+
+.tweet-date {
+  color: gray;
+}
+
+.tweet-imagesize {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+#Enterpriseimg {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.table_cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5%;
+}
+.up {
+  position: relative;
+  top: 10%;
+  font-size: 40px;
+}
+.X100 {
+  width: 50%;
+  height: 50%;
+}
+#middle_text {
+  text-align: center;
+  padding-top: 5%;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 3%;
+}
+.wihteboard {
+  background-color: white;
+  height: 95vh;
+  width: 80%;
+  display: inline-block;
+  overflow: hidden;
+}
+.graytext {
+  color: rgb(34, 34, 34);
+  font-size: 10px;
+}
+
+.instar-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.instar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.instar-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.instar-post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.instar-post-user {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.instar-post-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.instar-post-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.instar-post-actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.instar-post-action {
+  margin-right: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.instar-post-timestamp {
+  color: gray;
+  font-size: 12px;
+}
+
+#service_naver {
+  position: relative;
+  bottom: 45%;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+#info-naver {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navercareers {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.naverpart {
+  flex: 1;
+  border: 1px solid white;
+  padding: 20px;
+  color: white;
+}
+
+.naverpart-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.naverpart-content {
+  font-size: 18px;
+}
+
+#job-posting {
+  height: 100%;
+  border: none;
+}
+
+#bar-chart {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+#graph-canvas {
+  width: 100%;
+  height: 100%;
+}
+.white {
+  background-color: white;
+}
+
+#Future-name {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: rgb(255, 153, 191);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footertxt {
+  font-size: 0.5em;
+  color: gray;
+}
+
+.footerimg {
+  float: left;
+  margin-right: 20px;
+  max-width: 100px;
+  max-height: 100px;
+}
